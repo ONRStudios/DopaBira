@@ -603,7 +603,7 @@ function frame(){
 
   /* molekül: scroll ile çizilir */
   var r = mol.getBoundingClientRect();
-  var p = Math.max(0, Math.min(1,(vh*.85-r.top)/(vh*.50)));
+  var p = Math.max(0, Math.min(1,(vh*.70-r.top)/(vh*.35)));
   paths.forEach(function(el){
     el.style.strokeDashoffset = el._len*(1-seg(p, parseFloat(el.dataset.s), parseFloat(el.dataset.e)));
   });
